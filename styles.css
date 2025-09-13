@@ -1,0 +1,69 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #f3f4f6;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Part 1: Button hover effect */
+#hoverBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #4cafef;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#hoverBtn:hover {
+  background: #2196f3;
+  transform: scale(1.1);
+}
+
+/* Part 1: Box animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+/* Keyframe animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+
+.animate {
+  animation: bounce 1s ease forwards;
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
