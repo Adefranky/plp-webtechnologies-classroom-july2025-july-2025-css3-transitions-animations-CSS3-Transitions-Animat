@@ -15,7 +15,8 @@ function showResult(message) {
 
 // ==========================
 // Part 3: Combining JS + CSS
-// ==========================
+// =========================
+
 const box = document.getElementById("animatedBox");
 const animateBtn = document.getElementById("animateBtn");
 const calculateBtn = document.getElementById("calculateBtn");
@@ -36,9 +37,7 @@ calculateBtn.addEventListener("click", () => {
   showResult(`Double of ${globalValue} is ${doubled}`);
 });
 
-// ==========================
-// Popup Example
-// ==========================
+
 const popup = document.getElementById("popup");
 const openPopupBtn = document.getElementById("openPopupBtn");
 const closePopupBtn = document.getElementById("closePopupBtn");
